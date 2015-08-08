@@ -1,0 +1,39 @@
+*
+	margin 0
+	padding 0
+html
+	font-family Arial
+body
+	background lightgray
+#myapp
+	margin-top 1.5em	
+// forma de la page y columnas
+.col1,
+.col2
+	width 100%
+// video resposive
+.contenedorvideo
+	height 0
+	padding-bottom 56.25%
+	overflow hidden
+	position relative
+iframe,
+object,
+embed,
+video
+	width 100%
+	height 100%
+	position absolute
+	right 0
+	left 0
+// media query para darle desktop
+@media (min-width 1000px)
+	.col1,
+	.col2
+		float left
+		width 50%
+	#myapp
+		max-width 1000px
+		margin 0 auto
+		margin-top 1.5em	
+		
